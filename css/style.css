@@ -1,0 +1,51 @@
+body{
+    margin: 1cm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16px 24px
+}
+.header-content > .navigation {
+    flex-direction:row;
+    display:flex;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: whitesmoke;
+}
+
+.header-content > .logo {
+    width : 40px;
+    height: 40px;
+}
+.main-content {
+    padding: 24px;
+    
+}
+.banner-section {
+    display : flex;
+    flex-direction: row;
+}
+.auto-slide div {
+    display :block;
+    margin-bottom: 8px;
+    max-height: 70px; 
+    width: 100%;
+}
+
+.contact-us {
+    padding: 20px 50px 50px 50px;
+    display : flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: rgb(224, 229, 247);
+    max-height: 400px;
+    width: 100%;
+     
+}
+@media only screen and (max-width: 1200px){
+}
