@@ -8,9 +8,9 @@
         <header class="header-content">
                 <img class="logo"src="img/cart.svg">
                 <nav id="navigation">
-                    <button>Home</button>
-                    <button>Our Package</button>
-                    <button>Call Action</button>
+                    <button id="home">Home</button>
+                    <button id="package">Our Package</button>
+                    <button id="action">Call Action</button>
                 </nav>
         </header>
         <main class="main-content">
@@ -31,7 +31,7 @@
                     <div class="contact-us">
                         <h3>Contact Us</h3>
                         <h10>Sales akan menghubungi anda 1x24 jam setelah dana kami terima</h10>
-                        <form>
+                        <form name="newform" onsubmit="return validateForm()" method="post">
                             <label for="name">Your Name:</label><br>
                             <input type="text" id="name" placeholder="First and last name"> <br>
                             <label for="email">Email Address:</label><br>
@@ -49,63 +49,52 @@
                         </form>
                         <script src="js/script.js"></script>
                     </div>
-                    <div class="review-customers">
-                        <p>"setiap hari beli sayur buah yang fresh disini"</p>
-                        <img src="">
-                        <p>Flora Haura
-                         Ibu Rumah Tangga, 28
-                        </p>
-                    </div>
-                    <div class="benefits">
-                        <h5>Mari jelajahi berbagai keuntungan yang bisa anda dapatkan dengan berbelanja di sini:</h5>
-                        <ol type="1">
-                            <li> Kenyamanan: Nikmati kemudahan berbelanja kapan pun dan di mana pun Anda inginkan. Tidak perlu lagi pergi ke toko fisik dan antri di kasir. Cukup duduk di rumah atau di kantor, dan akses ratusan produk dengan beberapa kali klik.</li>
-                            <li> Pengiriman dan Pengembalian Mudah: Anda dapat memesan barang dan mengharapkannya tiba di depan pintu Anda dalam waktu singkat. Selain itu, proses pengembalian dan penggantian barang yang bermasalah juga relatif mudah dan cepat dilakukan.</li>
-                            <li> Ulasan dan Rekomendasi: Sebelum melakukan pembelian, Anda dapat dengan mudah mengakses ulasan dan rekomendasi produk dari pelanggan lain. Anda juga dapat membandingkan produk secara langsung dengan fitur perbandingan yang ada.</li>
-                        </ol>
-                
-                
             </div>
-    
+           
+            <div class="benefits">
+                <h5>Mari jelajahi berbagai keuntungan yang bisa anda dapatkan dengan berbelanja di sini:</h5>
+                <ul>
+                    <li> Kenyamanan</li>
+                    <dl>Nikmati kemudahan berbelanja kapan pun dan di mana pun Anda inginkan. Tidak perlu lagi pergi ke toko fisik dan antri di kasir. Cukup duduk di rumah atau di kantor, dan akses ratusan produk dengan beberapa kali klik.</dl>     
+                    <li> Pengiriman dan Pengembalian Mudah </li>
+                    <dl>Anda dapat memesan barang dan mengharapkannya tiba di depan pintu Anda dalam waktu singkat. Selain itu, proses pengembalian dan penggantian barang yang bermasalah juga relatif mudah dan cepat dilakukan.</dl>
+                    <li> Ulasan dan Rekomendasi</li>
+                    <dl>Sebelum melakukan pembelian, Anda dapat dengan mudah mengakses ulasan dan rekomendasi produk dari pelanggan lain. Anda juga dapat membandingkan produk secara langsung dengan fitur perbandingan yang ada.</dl>
+                </ul>
+            </div>
             <div class="package-section">
-                <h1>Our Package</h1>
-                <ol>
+                <h2>Our Package</h2>
+                <ul>
                     <li>
-                        <img src="">
                         <h5>Fresh Vegetable</h5>
                         <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
                     </li>
                     <li>
-                        <img src="">
                         <h5>Fresh Fruit</h5>
                         <p>Buah dengan kualitas terbaik dari lokal atau import dan harga yang menarik </p>
                     </li>
                     <li>
-                        <img src="">
                         <h5>Instant Delivery</h5>
                         <p>Dikirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu </p>
                     </li>
                     <li>
-                        <img src="">
                         <h5>Kitchen Ingredients</h5>
                         <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
                     </li>
                     <li>
-                        <img src="">
                         <h5>Kitchen Set</h5>
                         <p>Segala jenis alat masa untuk membantu kamu memasak</p>
                     </li>
                     <li>
-                        <img src="">
                         <h5>Bundling Set</h5>
                         <p>Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur</p>
                     </li>
-                </ol>
+                </ul>
             </div>
             <div class="call-action-section">
-                <p>Kami bangga mempersembahkan kepada Anda pengalaman berbelanja grosir online yang luar biasa. Dengan koleksi produk berkualitas tinggi, harga bersaing, dan layanan yang handal, kami siap menjadi mitra terpercaya dalam memenuhi kebutuhan grosir Anda.
+                <h4>Kami bangga mempersembahkan kepada Anda pengalaman berbelanja grosir online yang luar biasa. Dengan koleksi produk berkualitas tinggi, harga bersaing, dan layanan yang handal, kami siap menjadi mitra terpercaya dalam memenuhi kebutuhan grosir Anda.
                     Kunjungi website kami sekarang dan mulai berbelanja grosir dengan mudah. Toko grosir online kami siap memberikan yang terbaik untuk Anda!
-                </p>
+                </h4>
                 <button>Belanja Sekarang</button>
             </div>
         </main>
